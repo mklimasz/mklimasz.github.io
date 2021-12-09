@@ -2,23 +2,26 @@
 layout: about
 title: about
 permalink: /
-description: <a href="#">Affiliations</a>. Address. Contacts. Moto. Etc.
+description: PhD Student @ <a href="https://www.pw.edu.pl/engpw">WUT</a>, currently visiting <a href="https://www.ed.ac.uk/informatics">UoE</a>.
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: me.png
   address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
 
 news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am a PhD student at the [**Institute of Computer Science**](http://www.ii.pw.edu.pl/ii_eng/Inst.-of-Computer-Science)
+at the [**Warsaw University of Technology**](https://www.pw.edu.pl/engpw).
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Currently, I'm visiting [**StatMT**](http://www.statmt.org/ued/) team at the [**University of Edinburgh**](https://www.ed.ac.uk/informatics)
+under the supervision of [Prof. A. Birch](https://homepages.inf.ed.ac.uk/abmayne/).
+I've also done internships at **Google Zurich** and **Amazon Luxembourg**.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+At the **WUT**, I'm working under the supervision of [Prof. T. Gambin](https://scholar.google.pl/citations?user=7yNxok4AAAAJ&hl=pl&oi=ao)
+and [P. Andruszkiewicz](https://www.semanticscholar.org/author/P.-Andruszkiewicz/3103504) on **Information Extraction**
+and **Knowledge Graphs**. I'm also interested in **Neural Machine Translation** and **Dependency Parsing** (working with the
+[Linguistic Engineering Group](http://zil.ipipan.waw.pl/) @ ICS PAS).
