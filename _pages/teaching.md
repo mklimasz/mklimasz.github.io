@@ -12,23 +12,32 @@ nav: true
     <h3 class="subtitle">Wprowadzenie do przetwarzania języka naturalnego</h3>
     <h2 class="info">Harmonogram (wstępny)</h2>
         <ul>
-          <li>do 23.03 - ustalenie tematu projektu</li>
-          <li>do 13.04 - dokumentacja wstępna</li>
-          <li>do xx.06 - termin oddania projektu (wraz z prezentacją)</li>
+            <li>do 23.03 - ustalenie tematu projektu</li>
+            <li>do 13.04 - dokumentacja wstępna</li>
+            <li>do xx.06 - termin oddania projektu (wraz z prezentacją)</li>
         </ul>
     <h2 class="info">Informacje organizacyjne</h2>
         <ul>
-          <li>Zespoły 2 osobowe (w szczególnych przypadkach 1/3 dopuszczalne)</li>
-          <li>Konsultacje - środa, 18-19 (prośba o wcześniejszy kontakt)</li>
-          <ul>
-            <li>Obecnie zdalnie, więc termin elastyczny</li>
-          </ul>
-          <li>Pytania - mail/Teams</li>
+            <li>Zespoły 2 osobowe (w szczególnych przypadkach 1/3 dopuszczalne)</li>
+            <li>Konsultacje - środa, 18-19 (prośba o wcześniejszy kontakt)</li>
+            <ul>
+                <li>Obecnie zdalnie, więc termin elastyczny</li>
+            </ul>
+            <li>Pytania - mail/Teams</li>
         </ul>
     <h2 class="info">Propozycje projektów</h2>
     Własne propozycje tematów mile widziane
-        <ul>
+        <br><br>
+        <ol>
+            <li>Transliteracja w tłumaczeniu maszynowym
+            <ul>
+                <li>Wybór pary języków z różnym alfabetem (np. łaciński - cyrlica)</li>
+                <li>Wytrenowanie modeli tłumaczenia (bazowgo i poddanego transliteracji)</li>
+                <li>Analiza wyników</li>
+            </ul>
+            </li>
+            <li>Shared Task w ramach jednej z konferencji <a href="https://www.aclweb.org/portal/content/list-upcoming-workshops-and-co-located-events-acl-coling-emnlp-and-naacl-hlt-2022">*ACL'22</a></li>
             <li>TBA</li>
-        </ul>
+        </ol>
 </div>
 
