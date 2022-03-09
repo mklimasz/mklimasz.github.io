@@ -43,6 +43,13 @@ nav: true
                 <li>Szczegóły: <a href="https://ufal.mff.cuni.cz/corefud/crac22">CRAC'22 Shared Task</a></li>
             </ul>
             </li>
+            <li>Porównanie modeli sekwencyjnych do zadania tokenizacji i segmentacji
+            <ul>
+                <li>Wybór zestawu rozwiązań i zbiórów danych w oparciu o literaturę</li>
+                <li>Test dla min. 2 różnych języków</li>
+                <li>Analiza wyników</li>
+            </ul>
+            </li>
             <li>Shared Task w ramach jednej z konferencji <a href="https://www.aclweb.org/portal/content/list-upcoming-workshops-and-co-located-events-acl-coling-emnlp-and-naacl-hlt-2022">*ACL'22</a></li>
             <li>TBA</li>
         </ol>
