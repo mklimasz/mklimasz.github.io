@@ -29,7 +29,7 @@ nav: true
     Własne propozycje tematów mile widziane
         <br><br>
         <ol>
-            <li>Transliteracja w tłumaczeniu maszynowym
+            <li><span style="text-decoration: line-through;">Transliteracja w tłumaczeniu maszynowym</span> - temat zajęty
             <ul>
                 <li>Wybór pary języków z różnym alfabetem (np. łaciński - cyrlica)</li>
                 <li>Wytrenowanie modeli tłumaczenia (bazowgo i poddanego transliteracji)</li>
