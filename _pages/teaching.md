@@ -50,6 +50,12 @@ nav: true
                 <li>Analiza wyników</li>
             </ul>
             </li>
+            <li><a href="https://adapterhub.ml/">Adaptery w NLP</a>
+            <ul>
+                <li>Wybór zadania/zdań NLP z odpowiednimi schematami (np. problem wielojęzyczny, adaptacja domeny)</li>
+                <li>Porównanie, analiza dotrenowania modelu językowego (np. mBERT) z/bez Adapterów</li>
+            </ul>
+            </li>
             <li>Shared Task w ramach jednej z konferencji <a href="https://www.aclweb.org/portal/content/list-upcoming-workshops-and-co-located-events-acl-coling-emnlp-and-naacl-hlt-2022">*ACL'22</a></li>
             <li>TBA</li>
         </ol>
