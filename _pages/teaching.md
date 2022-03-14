@@ -56,6 +56,13 @@ nav: true
                 <li>Porównanie, analiza dotrenowania modelu językowego (np. mBERT) do konkretnego zadania z Adapterami i bez</li>
             </ul>
             </li>
+            <li>Porównanie różnych typów tagowania w zadaniu rozpoznawania jednostek nazewniczych
+            <ul>
+                <li>Wybór zbiorów zadań (2 różne języki)</li>
+                <li>Wybór kilku sposobów adnotacji (IO/BIO/...) oraz architektury</li>
+                <li>Porównianie rozwiązań</li>
+            </ul>
+            </li>
             <li>Shared Task w ramach jednej z konferencji <a href="https://www.aclweb.org/portal/content/list-upcoming-workshops-and-co-located-events-acl-coling-emnlp-and-naacl-hlt-2022">*ACL'22</a></li>
             <li>TBA</li>
         </ol>
