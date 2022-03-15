@@ -36,7 +36,7 @@ nav: true
                 <li>Analiza wyników</li>
             </ul>
             </li>
-            <li>Zadanie rozpoznawania koreferencji
+            <li><span style="text-decoration: line-through;">Zadanie rozpoznawania koreferencji</span> - temat zajęty
             <ul>
                 <li>Problem wielojęzyczny - można ograniczyć się do podzbioru</li>
                 <li>Może być większy zespół pod warunkiem pełnego udziału</li>
