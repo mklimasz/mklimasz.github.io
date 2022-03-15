@@ -63,6 +63,13 @@ nav: true
                 <li>Porównianie rozwiązań</li>
             </ul>
             </li>
+            <li><a href="https://aclanthology.org/P16-1009.pdf">Back-translation</a> w tłumaczeniu maszynowym
+            <ul>
+                <li>Przeprowadzenie (na mała skalę) eksperymentu zbliżonego do <a href="https://aclanthology.org/D18-1045.pdf">Edunov et al., EMNLP 2018</a></li>
+                <li>Back-translation: 2-3 metody, jedna para języków, zbiór testowy w konkretnej domenie</li>
+                <li>Analiza wyników</li>
+            </ul>
+            </li>
             <li>Shared Task w ramach jednej z konferencji <a href="https://www.aclweb.org/portal/content/list-upcoming-workshops-and-co-located-events-acl-coling-emnlp-and-naacl-hlt-2022">*ACL'22</a></li>
             <li>TBA</li>
         </ol>
