@@ -43,7 +43,7 @@ nav: true
                 <li>Szczegóły: <a href="https://ufal.mff.cuni.cz/corefud/crac22">CRAC'22 Shared Task</a></li>
             </ul>
             </li>
-            <li>Porównanie modeli sekwencyjnych do zadania tokenizacji i segmentacji
+            <li><span style="text-decoration: line-through;">Porównanie modeli sekwencyjnych do zadania tokenizacji i segmentacji</span> - temat zajęty
             <ul>
                 <li>Wybór zestawu rozwiązań i zbiórów danych w oparciu o literaturę</li>
                 <li>Test dla min. 2 różnych języków</li>
