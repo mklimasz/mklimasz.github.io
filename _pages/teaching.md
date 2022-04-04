@@ -14,7 +14,7 @@ nav: true
         <ul>
             <li>do 23.03 - ustalenie tematu projektu</li>
             <li>do 13.04 - dokumentacja wstępna</li>
-            <li>do xx.06 - termin oddania projektu (wraz z prezentacją)</li>
+            <li>do 1.06 - termin wysłania projektu (prezentacja do końca semestru)</li>
         </ul>
     <h2 class="info">Informacje organizacyjne</h2>
         <ul>
@@ -52,7 +52,7 @@ nav: true
             </li>
             <li><span style="text-decoration: line-through;"><a href="https://adapterhub.ml/">Adaptery w NLP</a></span> - temat zajęty
             <ul>
-                <li>Wybór zadania/zdań NLP z odpowiednimi schematami (np. problem wielojęzyczny, adaptacja domeny)</li>
+                <li>Wybór zadania/zadań NLP z odpowiednimi schematami (np. problem wielojęzyczny, adaptacja domeny)</li>
                 <li>Porównanie, analiza dotrenowania modelu językowego (np. mBERT) do konkretnego zadania z Adapterami i bez</li>
             </ul>
             </li>
