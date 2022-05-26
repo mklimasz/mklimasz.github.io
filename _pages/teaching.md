@@ -14,7 +14,7 @@ nav: true
         <ul>
             <li>do 23.03 - ustalenie tematu projektu</li>
             <li>do 13.04 - dokumentacja wstępna</li>
-            <li>do 1.06 - termin wysłania projektu (prezentacja do końca semestru)</li>
+            <li>do 1.06 - termin wysłania projektu (prezentacja do końca semestru, edit: jeśli potrzeba oceny do zwolnienia z kolokwium - to najpóźniej dzień przed kolokwium)</li>
         </ul>
     <h2 class="info">Informacje organizacyjne</h2>
         <ul>
