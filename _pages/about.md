@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-description: PhD Student @ <a href="https://www.pw.edu.pl/engpw">WUT</a>, currently visiting <a href="https://www.ed.ac.uk/informatics">UoE</a>.
+description: PhD Student @ <a href="https://www.pw.edu.pl/engpw">WUT</a>.
 
 profile:
   align: right
@@ -14,14 +14,14 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am a PhD student at the [**Institute of Computer Science**](http://www.ii.pw.edu.pl/ii_eng/Inst.-of-Computer-Science)
-at the [**Warsaw University of Technology**](https://www.pw.edu.pl/engpw).
-
-Currently, I'm visiting [**StatMT**](http://www.statmt.org/ued/) team at the [**University of Edinburgh**](https://www.ed.ac.uk/informatics)
-under the supervision of [Prof. A. Birch](https://homepages.inf.ed.ac.uk/abmayne/).
-I've also done internships at **Google Zurich** and **Amazon Luxembourg**.
-
-At the **WUT**, I'm working under the supervision of [Prof. T. Gambin](https://scholar.google.pl/citations?user=7yNxok4AAAAJ&hl=pl&oi=ao)
+I am a third-year PhD student at the [**Institute of Computer Science**](http://www.ii.pw.edu.pl/ii_eng/Inst.-of-Computer-Science)
+at the [**Warsaw University of Technology**](https://www.pw.edu.pl/engpw). I am working under the supervision of [Prof. T. Gambin](https://scholar.google.pl/citations?user=7yNxok4AAAAJ&hl=pl&oi=ao)
 and [P. Andruszkiewicz](https://www.semanticscholar.org/author/P.-Andruszkiewicz/3103504) on **Information Extraction**
-and **Knowledge Graphs**. I'm also interested in **Neural Machine Translation** and **Dependency Parsing** (working with the
+and **Knowledge Graphs**. I am also interested in **Neural Machine Translation** and **Dependency Parsing** (working with the
 [Linguistic Engineering Group](http://zil.ipipan.waw.pl/) @ ICS PAS).
+
+Currently, I am a **Research Intern** at **Booking.com** working with the NMT team.
+
+Recently I finished my research visit at the [**StatMT**](http://www.statmt.org/ued/) team at the [**University of Edinburgh**](https://www.ed.ac.uk/informatics)
+under the supervision of [Prof. A. Birch](https://homepages.inf.ed.ac.uk/abmayne/).
+I have also done internships at **Google Zurich** and **Amazon Luxembourg**.
