@@ -36,6 +36,13 @@ nav: true
                 <li>Porównanie wyników zadania z i bez zastosowania tej metody</li>
             </ul>
             </li>
+            <li><a href="https://suzyahyah.github.io/bayesian%20inference/machine%20translation/2022/02/15/mbr-decoding.html">Dekodowanie MBR</a> a Beam search w tłumaczeniu maszynowym
+            <ul>
+                <li>Analiza porównawcza dwóch typów dekodowania</li>
+                <li>Wykorzystanie dostępnych publicznie modeli i <a href="https://github.com/Roxot/mbr-nmt">bibliotek</a></li>
+                <li>Można skupić się na lingwistycznych różnicach (lub technicznych jak <a href="https://aclanthology.org/2021.acl-long.22.pdf">Müller & Sennrich, ACL 2021</a>)</li>
+            </ul>
+            </li>
             <li>Udział w jednym z zadań ramach konkursu <a href="https://semeval.github.io/SemEval2023/tasks">SemEval-2023</a>
             <ul>
                 <li>Częściowy udział (np. tylko jeden język w zadaniach wielojęzycznych) jest ok</li>
