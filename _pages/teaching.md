@@ -43,7 +43,7 @@ nav: true
                 <li>Można skupić się na lingwistycznych różnicach (lub technicznych jak <a href="https://aclanthology.org/2021.acl-long.22.pdf">Müller & Sennrich, ACL 2021</a>)</li>
             </ul>
             </li>
-            <li>Udział w jednym z zadań ramach konkursu <a href="https://semeval.github.io/SemEval2023/tasks">SemEval-2023</a>
+            <li>Udział w jednym z zadań w ramach konkursu <a href="https://semeval.github.io/SemEval2023/tasks">SemEval-2023</a>
             <ul>
                 <li>Częściowy udział (np. tylko jeden język w zadaniach wielojęzycznych) jest ok</li>
                 <li>Zespoły 3-osobowe są dopuszczalne bez argumentacji ;)</li>
