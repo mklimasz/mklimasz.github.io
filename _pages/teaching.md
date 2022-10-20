@@ -49,7 +49,7 @@ nav: true
                 <li>Zespoły 3-osobowe są dopuszczalne bez argumentacji ;)</li>
             </ul>
             </li>
-            <li><a href="https://aclanthology.org/P16-1009.pdf">Back-translation</a> w tłumaczeniu maszynowym - temat zajęty
+            <li><a href="https://aclanthology.org/P16-1009.pdf">Back-translation</a> w tłumaczeniu maszynowym
             <ul>
                 <li>Przeprowadzenie (na mała skalę) eksperymentu zbliżonego do <a href="https://aclanthology.org/D18-1045.pdf">Edunov et al., EMNLP 2018</a></li>
                 <li>Back-translation: 2-3 metody, jedna para języków, zbiór testowy w konkretnej domenie</li>
