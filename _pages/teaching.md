@@ -56,6 +56,13 @@ nav: true
                 <li>Analiza wyników</li>
             </ul>
             </li>
+            <li>Wpływ metod przetwarzania wstępnego na adaptację domeny w tłumaczeniu maszynowym
+            <ul>
+                <li>Wykorzystanie gotowego modelu tłumaczenia maszynowego</li>
+                <li>Wybór 1-2 metod adaptacji domeny (np. <a href="https://arxiv.org/abs/1612.06897">"fine-tuning"</a> lub <a href="https://aclanthology.org/D19-1165.pdf">adaptery</a>)</li>
+                <li>Analiza wpływu różnych metod przetwarzania danych (np. filtrowanie w oparciu o stosunek pomiędzy długościami zdań, wykrycie języka, różnice numeryczne) na wyniki</li>
+            </ul>
+            </li>
             <li>TBA</li>
         </ol>
     <h2 class="year">Summer 2021/2022</h2>
