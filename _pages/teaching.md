@@ -29,7 +29,7 @@ nav: true
     Własne propozycje tematów mile widziane
         <br><br>
         <ol>
-            <li>Adaptacja domeny poprzez "pre-training"
+            <li><span style="text-decoration: line-through;">Adaptacja domeny poprzez "pre-training"</span> - temat zajęty
             <ul>
                 <li>Przeprowadzenie (na mała skalę) eksperymentu zbliżonego do <a href="https://aclanthology.org/2020.acl-main.740.pdf">Gururangan et al., ACL 2020</a></li>
                 <li>Wybór jednego z zadań NLP, np. analiza sentymentu + kilku zbiorów podobnych na których będzie wykonywany tylko "pre-training"</li>
