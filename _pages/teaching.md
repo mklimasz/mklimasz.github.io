@@ -7,6 +7,9 @@ nav: true
 ---
 
 <div class="teaching">
+    <h2 class="year">Summer 2023</h2>
+    <h1 class="title">Introduction to Natural Language Processing</h1>
+    <h3 class="subtitle">Wprowadzenie do przetwarzania języka naturalnego</h3>
     <h2 class="year">Winter 2022/2023</h2>
     <h1 class="title">Introduction to Natural Language Processing</h1>
     <h3 class="subtitle">Wprowadzenie do przetwarzania języka naturalnego</h3>
@@ -65,7 +68,7 @@ nav: true
             </li>
             <li>TBA</li>
         </ol>
-    <h2 class="year">Summer 2021/2022</h2>
+    <h2 class="year">Summer 2022</h2>
     <h1 class="title">Introduction to Natural Language Processing</h1>
     <h3 class="subtitle">Wprowadzenie do przetwarzania języka naturalnego</h3>
     <h2 class="info">Harmonogram (wstępny)</h2>
