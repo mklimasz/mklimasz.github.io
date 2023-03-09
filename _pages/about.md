@@ -16,8 +16,8 @@ social: true  # includes social icons at the bottom of the page
 
 I am a fourth-year PhD student at the [**Institute of Computer Science**](http://www.ii.pw.edu.pl/ii_eng/Inst.-of-Computer-Science)
 at the [**Warsaw University of Technology**](https://www.pw.edu.pl/engpw). I am working under the supervision of [Prof. T. Gambin](https://scholar.google.pl/citations?user=7yNxok4AAAAJ&hl=pl&oi=ao)
-and [P. Andruszkiewicz](https://www.semanticscholar.org/author/P.-Andruszkiewicz/3103504) on **Information Extraction**
-and **Knowledge Graphs**. I am also interested in **Neural Machine Translation** and **Dependency Parsing** (working with the
+and [P. Andruszkiewicz](https://www.semanticscholar.org/author/P.-Andruszkiewicz/3103504) on **Neural Machine Translation**, **Domain Adaptation**
+and **Knowledge Graphs**. I am also interested in **Dependency Parsing** (working with the
 [Linguistic Engineering Group](http://zil.ipipan.waw.pl/) @ ICS PAS).
 
 Recently, I was a **Research Intern** at **Booking.com** working with the NMT team.

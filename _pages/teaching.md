@@ -13,7 +13,7 @@ nav: true
     <h2 class="info">Harmonogram (wstępny)</h2>
         <ul>
             <li>do 29.03 - ustalenie tematu projektu</li>
-            <li>do 19.04 - dokumentacja wstępna (element obowiązkowy dokumentacji to **wstępne wyniki**)</li>
+            <li>do 19.04 - dokumentacja wstępna (element obowiązkowy dokumentacji to <b>wstępne wyniki</b>)</li>
             <li>do 31.05 - oddanie projektu</li>
         </ul>
     <h2 class="info">Informacje organizacyjne</h2>
