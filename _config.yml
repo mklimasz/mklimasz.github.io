@@ -51,7 +51,7 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 
 github_username: mklimasz # your GitHub user name
 gitlab_username: # your GitLab user name
-twitter_username: # your Twitter handle
+twitter_username: m_klimasz # your Twitter handle
 linkedin_username: mklimasz # your LinkedIn user name
 scholar_userid: ouE-7p8AAAAJ # your Google Scholar ID
 orcid_id: # your ORCID ID
@@ -77,8 +77,8 @@ panelbear_analytics: XXXXXXXXX # panelbear analytics site ID
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: Blog  # your blog must have a name for it to show up in the nav bar
-blog_description: Empty blog (for now)
+blog_name: Blog # your blog must have a name for it to show up in the nav bar
+blog_description: Neural Machine Translation (and other things)
 permalink: /blog/:year/:title/
 
 # Pagination

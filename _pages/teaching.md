@@ -25,6 +25,27 @@ nav: true
             </ul>
             <li>Pytania (element obwiązkowy każdego projektu) - Teams/mail/konsultacje</li>
         </ul>
+    <h2 class="info">Propozycje projektów</h2>
+    Własne propozycje tematów mile widziane. Do projektów związanych z tłumaczeniem maszynowym, dostępny jest tutorial w zakładce <a href="/blog/2023/fariseq-101-train-a-model/">blog</a>
+    (byłbym wdzięczny za feedback i zgłaszanie błędów każdego typu, literówek też).
+        <br><br>
+        <ol>
+            <li>Idiomy w tłumaczeniu maszynowym
+            <ul>
+                <li>Punkt wyjściowy to publikacja <a href="https://arxiv.org/abs/2210.04545">Baziotis et al., 2022</a></li>
+                <li>Tłumaczenie angielski-polski/polski-angielski</li>
+                <li>Projekt może się skupić na wątku ewaluacji i danych lub metodach trenowania</li>
+            </ul>
+            </li>
+            <li><a href="https://suzyahyah.github.io/bayesian%20inference/machine%20translation/2022/02/15/mbr-decoding.html">Dekodowanie MBR</a> a Beam search w tłumaczeniu maszynowym
+            <ul>
+                <li>Analiza porównawcza dwóch typów dekodowania</li>
+                <li>Wykorzystanie dostępnych publicznie modeli i <a href="https://github.com/Roxot/mbr-nmt">bibliotek</a></li>
+                <li>Można skupić się na lingwistycznych różnicach (lub technicznych jak <a href="https://aclanthology.org/2021.acl-long.22.pdf">Müller & Sennrich, ACL 2021</a>)</li>
+            </ul>
+            </li>
+            <li>TBA</li>
+        </ol>
     <h2 class="year">Winter 2022/2023</h2>
     <h1 class="title">Introduction to Natural Language Processing</h1>
     <h3 class="subtitle">Wprowadzenie do przetwarzania języka naturalnego</h3>
