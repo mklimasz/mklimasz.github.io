@@ -10,7 +10,7 @@ nav: true
     <h2 class="year">Summer 2023</h2>
     <h1 class="title">Introduction to Natural Language Processing</h1>
     <h3 class="subtitle">Wprowadzenie do przetwarzania języka naturalnego</h3>
-    <h2 class="info">Harmonogram (wstępny)</h2>
+    <h2 class="info">Harmonogram</h2>
         <ul>
             <li>do 29.03 - ustalenie tematu projektu</li>
             <li>do 19.04 - dokumentacja wstępna (element obowiązkowy dokumentacji to <b>wstępne wyniki</b>)</li>
@@ -35,6 +35,13 @@ nav: true
                 <li>Punkt wyjściowy to publikacja <a href="https://arxiv.org/abs/2210.04545">Baziotis et al., 2022</a></li>
                 <li>Tłumaczenie angielski-polski/polski-angielski</li>
                 <li>Projekt może się skupić na wątku ewaluacji i danych lub metodach trenowania</li>
+            </ul>
+            </li>
+            <li>Wpływ metod przetwarzania wstępnego na adaptację domeny w tłumaczeniu maszynowym
+            <ul>
+                <li>Wykorzystanie gotowego modelu tłumaczenia maszynowego</li>
+                <li>Wybór 1-2 metod adaptacji domeny (np. <a href="https://arxiv.org/abs/1612.06897">"fine-tuning"</a> lub <a href="https://aclanthology.org/D19-1165.pdf">adaptery</a>)</li>
+                <li>Analiza wpływu różnych metod przetwarzania danych (np. filtrowanie w oparciu o stosunek pomiędzy długościami zdań, wykrycie języka, różnice miar/interpunkcji)</li>
             </ul>
             </li>
             <li><a href="https://suzyahyah.github.io/bayesian%20inference/machine%20translation/2022/02/15/mbr-decoding.html">Dekodowanie MBR</a> a Beam search w tłumaczeniu maszynowym
