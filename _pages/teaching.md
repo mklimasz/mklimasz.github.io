@@ -19,7 +19,7 @@ nav: true
     <h2 class="info">Informacje organizacyjne</h2>
         <ul>
             <li>Zespoły 2 osobowe (w szczególnych przypadkach 1/3 dopuszczalne)</li>
-            <li>Konsultacje - środa, 18-19 (prośba o wcześniejszy kontakt)</li>
+            <li>Konsultacje - środa, 18-19, 302 (prośba o wcześniejszy kontakt)</li>
             <ul>
                 <li>Termin elastyczny, jeśli zdalnie.</li>
             </ul>
