@@ -241,6 +241,7 @@ In the case of Colab timing out, you can change the `--keep-interval-updates` an
 ```bash
 fairseq-train \
         "bin" \
+        --fp16 \
         --arch transformer_wmt_en_de \
         --share-all-embeddings \
         --optimizer adam \
@@ -250,20 +251,16 @@ fairseq-train \
         --lr-scheduler inverse_sqrt \
         --warmup-updates 4000 \
         --warmup-init-lr 1e-07 \
-        --dropout 0.3 \
+        --dropout 0.1 \
         --weight-decay 0.0 \
         --criterion label_smoothed_cross_entropy \
         --label-smoothing 0.1 \
         --save-dir "model_output" \
         --log-format json \
         --log-interval 100 \
-        --max-tokens 16384 \
-        --max-update 400000 \
+        --max-tokens 8000 \
+        --max-epoch 100 \
         --patience 5 \
-        --save-interval-updates 20000 \
-        --validate-interval-updates 20000 \
-        --keep-interval-updates 0 \
-        --no-epoch-checkpoints \
         --seed 3921 \
         --eval-bleu \
         --eval-bleu-args '{"beam": 5, "max_len_a": 1.2, "max_len_b": 10}' \
