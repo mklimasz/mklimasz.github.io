@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-description: PhD Student @ <a href="https://www.pw.edu.pl/engpw">WUT</a>.
+description: PhD Student @ <a href="https://www.pw.edu.pl/engpw">WUT</a>, currently @ <a href="https://www.ed.ac.uk/informatics"> UoE</a> 
 
 profile:
   align: right
@@ -20,8 +20,10 @@ and [P. Andruszkiewicz](https://www.semanticscholar.org/author/P.-Andruszkiewicz
 and **Knowledge Graphs**. I am also interested in **Dependency Parsing** (working with the
 [Linguistic Engineering Group](http://zil.ipipan.waw.pl/) @ ICS PAS).
 
-Recently, I was a **Research Intern** at **Booking.com** working with the NMT team.
+Currently, I'm visiting [**StatMT**](http://www.statmt.org/ued/) team at the [**University of Edinburgh**](https://www.ed.ac.uk/informatics)
+under the supervision of [Prof. A. Birch](https://homepages.inf.ed.ac.uk/abmayne/).
 
+Recently, I was a **Research Intern** at **Booking.com** working with the NMT team.
 I have also done internships at **Google Zurich** and **Amazon Luxembourg**.
 Additionally, I did a research visit at the [**StatMT**](http://www.statmt.org/ued/) team at the [**University of Edinburgh**](https://www.ed.ac.uk/informatics)
 under the supervision of [Prof. A. Birch](https://homepages.inf.ed.ac.uk/abmayne/).
