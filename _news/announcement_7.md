@@ -5,4 +5,3 @@ inline: true
 ---
 
 Again @ **UoE** as visiting PhD student :fire:
-
