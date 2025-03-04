@@ -7,6 +7,19 @@ nav: true
 ---
 
 <div class="teaching">
+    <h2 class="year">Summer 2025</h2>
+    <h1 class="title">Introduction to Natural Language Processing</h1>
+    <h3 class="subtitle">Wprowadzenie do przetwarzania języka naturalnego</h3>
+    <h2 class="info">Harmonogram</h2>
+        <ul>
+            <li>TBA</li>
+        </ul>
+    <h2 class="info">Informacje organizacyjne</h2>
+        <ul>
+            <li>TBA</li>
+        </ul>
+    <h2 class="info">Propozycje projektów</h2>
+    TBA
     <h2 class="year">Summer 2023</h2>
     <h1 class="title">Introduction to Natural Language Processing</h1>
     <h3 class="subtitle">Wprowadzenie do przetwarzania języka naturalnego</h3>
