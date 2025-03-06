@@ -12,11 +12,18 @@ nav: true
     <h3 class="subtitle">Wprowadzenie do przetwarzania języka naturalnego</h3>
     <h2 class="info">Harmonogram</h2>
         <ul>
-            <li>TBA</li>
+            <li>do 26.03 - ustalenie tematu projektu</li>
+            <li>do 23.04 - dokumentacja wstępna (element obowiązkowy dokumentacji to <b>wstępne wyniki</b>)</li>
+            <li>do 28.05 - oddanie projektu</li>
         </ul>
     <h2 class="info">Informacje organizacyjne</h2>
         <ul>
-            <li>TBA</li>
+            <li>Zespoły 2-3 osobowe</li>
+            <li>Konsultacje - środa, 18-19, 302 (prośba o wcześniejszy kontakt)</li>
+            <ul>
+                <li>Termin elastyczny, jeśli zdalnie.</li>
+            </ul>
+            <li>Pytania (element obwiązkowy każdego projektu) - Teams/mail/konsultacje</li>
         </ul>
     <h2 class="info">Propozycje projektów</h2>
     TBA
