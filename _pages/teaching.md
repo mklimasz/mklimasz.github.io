@@ -45,7 +45,7 @@ nav: true
         <li><a href="https://huggingface.co/docs/peft/developer_guides/model_merging">Model merging</a>
         <ul>
             <li>Wytrenowanie kilku modeli (np. <a href="prajjwal1/bert-mini">MiniBERT</a>) do wybranych zadań</li>
-            <li>Porównanie kilku metod _model merging_ (<a href="https://github.com/arcee-ai/mergekit?tab=readme-ov-file#merge-methods">przykładowa lista i implementacja</a>)</li>
+            <li>Porównanie kilku metod "model merging" (<a href="https://github.com/arcee-ai/mergekit?tab=readme-ov-file#merge-methods">przykładowa lista i implementacja</a>)</li>
         </ul>
         </li>
         </ol>
