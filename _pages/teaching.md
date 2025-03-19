@@ -26,7 +26,29 @@ nav: true
             <li>Pytania (element obwiązkowy każdego projektu) - Teams/mail/konsultacje</li>
         </ul>
     <h2 class="info">Propozycje projektów</h2>
-    TBA
+    Własne propozycje tematów mile widziane
+        <br><br>
+        <ol>
+            <li>Realizacja zadania (lub jego części) z <a href="https://semeval.github.io/SemEval2025/tasks.html">SemEval 2025</a>.</li>
+        <li>Idiomy w tłumaczeniu maszynowym
+        <ul>
+            <li>Punkt wyjściowy to publikacja <a href="https://aclanthology.org/2023.eacl-main.267/">Baziotis et al., 2023</a></li>
+            <li>Projekt może skupić się na wątku ewaluacji (np. LLMów) i tworzenia danych lub metodach trenowania (małych modeli - tutorial w zakładce <a href="/blog/2023/fariseq-101-train-a-model/">blog</a>)</li>
+        </ul>
+        </li>
+        <li>Tłumczenie kontekstowe - problemy
+        <ul>
+            <li>Ewaluacja tłumaczenia kontekstowego (dokumenty zamiast zdań)</li>
+            <li>Zadanie eksploracyjne - szukanie ograniczeń obecnych modeli i metryk</li>
+        </ul>
+        </li>
+        <li><a href="https://huggingface.co/docs/peft/developer_guides/model_merging">Model merging</a>
+        <ul>
+            <li>Wytrenowanie kilku modeli (np. <a href="prajjwal1/bert-mini">MiniBERT</a>) do wybranych zadań</li>
+            <li>Porównanie kilku metod _model merging_ (<a href="https://github.com/arcee-ai/mergekit?tab=readme-ov-file#merge-methods">przykładowa lista i implementacja</a>)</li>
+        </ul>
+        </li>
+        </ol>
     <h2 class="year">Summer 2023</h2>
     <h1 class="title">Introduction to Natural Language Processing</h1>
     <h3 class="subtitle">Wprowadzenie do przetwarzania języka naturalnego</h3>
