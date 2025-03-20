@@ -42,6 +42,12 @@ nav: true
             <li>Zadanie eksploracyjne - szukanie ograniczeń obecnych modeli i metryk</li>
         </ul>
         </li>
+        <li>Porównanie metod Parameter-Efficient Fine-tuning (PEFT) na wybranych zadaniach NLP
+        <ul>
+            <li>Wybór różnych zadań NLP (w różnym typie, np. klasyfikacja i <a href="https://huggingface.co/docs/autotrain/en/seq2seq">seq2seq</a>)</li>
+            <li>Porównanie kilku metod PEFT w tych zadaniach (np. korzystając z bilioteki <a href="https://github.com/huggingface/peft">peft</a> lub <a href="https://github.com/adapter-hub/adapters">adapters</a>)</li>
+        </ul>
+        </li>
         <li><a href="https://huggingface.co/docs/peft/developer_guides/model_merging">Model merging</a>
         <ul>
             <li>Wytrenowanie kilku modeli (np. <a href="prajjwal1/bert-mini">MiniBERT</a>) do wybranych zadań</li>
