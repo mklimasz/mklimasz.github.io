@@ -86,7 +86,7 @@ The executables are stored in the `build/src` directory.
 I usually keep the path to this directory in an external environment variable, i.e. `SPM`.
 
 ```bash
-export SPM=$PWD/sentencpiece/build/src
+export SPM=$PWD/sentencepiece/build/src
 ```
 
 We can test our installation by running the following command:
