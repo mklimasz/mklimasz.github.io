@@ -7,6 +7,62 @@ nav: true
 ---
 
 <div class="teaching">
+    <h2 class="year">Winter 2025/2026</h2>
+    <h1 class="title">Introduction to Natural Language Processing [NLP]</h1>
+    <h3 class="subtitle">Wprowadzenie do przetwarzania języka naturalnego</h3>
+        <h2 class="info">Harmonogram</h2>
+        <ul>
+            <li>do TBD - ustalenie tematu projektu</li>
+            <li>do TBD - dokumentacja wstępna (element obowiązkowy dokumentacji to <b>wstępne wyniki</b>)</li>
+            <li>do TBD - oddanie projektu</li>
+        </ul>
+    <h2 class="info">Informacje organizacyjne</h2>
+        <ul>
+            <li>Zespoły 2-3 osobowe</li>
+            <li>Konsultacje - środa, 17-18, 306 (wymagany wcześniejszy kontakt)</li>
+            <ul>
+                <li>Termin elastyczny, jeśli zdalnie.</li>
+            </ul>
+            <li>Pytania (element **obwiązkowy** każdego projektu) - Teams/mail/konsultacje</li>
+        </ul>
+    <h2 class="info">Propozycje projektów</h2>
+    Własne propozycje tematów mile widziane
+        <br><br>
+        <ol>
+        <ul>
+            <li>Ewaluacja tłumaczenia kontekstowego (dokumenty zamiast zdań)</li>
+            <li>Zadanie eksploracyjne - szukanie ograniczeń obecnych modeli i metryk</li>
+        </ul>
+        <li><a href="https://huggingface.co/docs/peft/developer_guides/model_merging">Model merging</a>
+        <ul>
+            <li>Wytrenowanie kilku modeli (np. <a href="prajjwal1/bert-mini">MiniBERT</a>) do wybranych zadań NLP</li>
+            <li>Porównanie kilku metod "model merging" (<a href="https://github.com/arcee-ai/mergekit?tab=readme-ov-file#merge-methods">przykładowa lista i implementacja</a>)</li>
+        </ul>
+        </li>
+        </ol>
+    <h1 class="title">Application Programming [PAP]</h1>
+    <h3 class="subtitle">Programowanie aplikacyjne</h3>
+    <h2 class="info">Informacje organizacyjne</h2>
+        <ul>
+            <li>Konsultacje - środa, 17-18, 306 (wymagany wcześniejszy kontakt)</li>
+            <ul>
+                <li>Termin elastyczny, jeśli zdalnie.</li>
+            </ul>
+            <li>Pytania (element obwiązkowy każdego projektu) - Teams/mail/konsultacje</li>
+        </ul>
+    <h2 class="info">Zasady (in-progress)</h2>
+        <ul>
+            <li>Uzgodnienie tematu musi nastąpić przed końcem etapu nr 1 (należy uwzględnić, że temat może okazać się zbyt prosty)</li>
+            <li>Każdy etap wymaga stworzenia w repozytorium pliku PAP2025Zxx_etap_N.pdf z treścią wymaganą przed konkretny etap (max. 2 strony, np. PAP2025Z03_etap_1.pdf)</li>
+            <li>Po wykonaniu każdego etapu (zgodnie z harmonogramem przedmiotu) należy wysłać maila (jeden na zespół) z krótkim opisem rozwiązania (co zmieniło się względem poprzedniego etapu) + link do projektu na gitlabie</li>
+        </ul>
+    <h2 class="info">Wymagania (in-progress)</h2>
+        <ul>
+            <li>Technologie: Java (lub inne języki JVM) + Swing/JavaFX (lub rozwiązanie webowe do interfejsu użytkownika)</li>
+            <li>Uruchomienie: <b>prosta</b> instrukcja w README.md w repozytorium (preferowany <a href="https://docs.docker.com/reference/samples/java/">docker</a>, musi być środowisko Linux)</li>
+            <li>Baza danych: SQL/NoSQL, nie może to być baza w postaci plików</li>
+            <li>Testy: jednostkowe to minimum, zależnie od projektu także integracyjne</li>
+        </ul>
     <h2 class="year">Summer 2025</h2>
     <h1 class="title">Introduction to Natural Language Processing</h1>
     <h3 class="subtitle">Wprowadzenie do przetwarzania języka naturalnego</h3>
