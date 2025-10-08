@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>
+
+  Mateusz  Klimaszewski
+
+
+  | Fairseq 101 - train a model
+
+</title>
+<meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+">
+
+<!-- Open Graph -->
+
+
+<!-- Bootstrap & MDB -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg==" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" integrity="sha512-RO38pBRxYH3SoOprtPTD86JFOclM51/XTIdEPh5j8sj4tp8jmQIx26twG52UaLi//hQldfrh7e51WzP9wuP32Q==" crossorigin="anonymous" />
+
+<!-- Fonts & Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"  integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+<!-- Code Syntax Highlighting -->
+<link rel="stylesheet" href="https://raw.githubusercontent.com/jwarby/jekyll-pygments-themes/master/github.css" />
+
+<!-- Styles -->
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍹</text></svg>">
+
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="canonical" href="https://mklimasz.github.io/blog/2023/fariseq-101-train-a-model/">
+
+
+<!-- Dark Mode -->
+<script src="/assets/js/theme.js"></script>
+<script src="/assets/js/dark_mode.js"></script>
+
+
+    
+<!-- MathJax -->
+<script type="text/javascript">
+  window.MathJax = {
+    tex: {
+      tags: 'ams'
+    }
+  };
+</script>
+<script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
+<script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+    <script src="/assets/js/distillpub/template.v2.js"></script>
+    <script src="/assets/js/distillpub/transforms.v2.js"></script>
+    <script src="/assets/js/distillpub/overrides.js"></script>
+    
+  </head>
+
+  <d-front-matter>
+    <script async type="text/json">{
+      "title": "Fairseq 101 - train a model",
+      "description": "Train your first Fairseq model - tutorial for NLP@WUT class",
+      "published": "March 7, 2023",
+      "authors": [
+        
+        {
+          "author": "Mateusz Klimaszewski",
+          "authorURL": "",
+          "affiliations": [
+            {
+              "name": "WUT",
+              "url": ""
+            }
+          ]
+        }
+        
+      ],
+      "katex": {
+        "delimiters": [
+          {
+            "left": "$",
+            "right": "$",
+            "display": false
+          },
+          {
+            "left": "$$",
+            "right": "$$",
+            "display": true
+          }
+        ]
+      }
+    }</script>
+  </d-front-matter>
+
+  <body class="fixed-top-nav ">
+
+    <!-- Header -->
+
+    <header>
+
+    <!-- Nav Bar -->
+    <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+    <div class="container">
+      
+      <a class="navbar-brand title font-weight-lighter" href="https://mklimasz.github.io/">
+       <span class="font-weight-bold">Mateusz</span>   Klimaszewski
+      </a>
+      
+      <!-- Navbar Toggle -->
+      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          <!-- About -->
+          <li class="nav-item ">
+            <a class="nav-link" href="/">
+              about
+              
+            </a>
+          </li>
+          
+          <!-- Blog -->
+          <li class="nav-item active">
+            <a class="nav-link" href="/blog/">
+              blog
+              
+            </a>
+          </li>
+          
+          <!-- Other pages -->
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="/publications/">
+                publications
+                
+              </a>
+          </li>
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="/teaching/">
+                teaching
+                
+              </a>
+          </li>
+          
+          
+          
+          
+          
+          
+            <div class="toggle-container">
+              <a id="light-toggle">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+              </a>
+            </div>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+
+    <!-- Content -->
+
+    <div class="post distill">
+
+      <d-title>
+        <h1>Fairseq 101 - train a model</h1>
+        <p>Train your first Fairseq model - tutorial for NLP@WUT class</p>
+      </d-title>
+
+      <d-byline></d-byline>
+
+      <d-article>
+        
+        <d-contents>
+          <nav class="l-text figcaption">
+          <h3>Contents</h3>
+            
+            <div><a href="#installation">Installation</a></div>
+            
+            <ul>
+              
+              <li><a href="#fairseq">Fairseq</a></li>
+              
+              <li><a href="#sentencepiece">SentencePiece</a></li>
+              
+              <li><a href="#wandb">Wandb</a></li>
+              
+            </ul>
+            
+            
+            <div><a href="#from-data-to-model">From data to model</a></div>
+            
+            <ul>
+              
+              <li><a href="#parallel-corpora">Parallel corpora</a></li>
+              
+              <li><a href="#training-a-sentencepiece-model">Training a SentencePiece model</a></li>
+              
+              <li><a href="#data-pre-processing">Data pre-processing</a></li>
+              
+              <li><a href="#training-a-nmt-model">Training a NMT model</a></li>
+              
+            </ul>
+            
+            
+          </nav>
+        </d-contents>
+        
+
+        <p>Fairseq is my go-to library when it comes to Neural Machine Translation.
+The codebase is quite nicely written, and it is easy to modify the architectures.
+However, the documentation is suboptimal and, most of the time, does not follow the rapid changes in the new releases.
+Code is the best (and the only) documentation in this case.
+I decided to write a step-by-step pipeline to ease the first steps with the library (following students’ comments about the lack of end-to-end tutorials).
+This tutorial aims to train an NMT model from scratch, explaining requirements in terms of libraries, how to get data, and introducing the reader to basic Fairseq commands.
+On this fundamental level, the tutorial should be correct even with future releases of Fairseq.</p>
+
+<p>The audience of this tutorial is students taking part in an NLP class @ WUT, whose project is related to Neural Machine Translation.
+However, the content is generic and might serve all new Fairseq users.</p>
+
+<p>The interactive (but less detailed) version is available as a <a href="https://colab.research.google.com/drive/1xVRbJiwNRavTnCvLswEA9Nu6jkoSAHax?usp=sharing" target="_blank" rel="noopener noreferrer">Google Colab notebook</a>.
+I suggest running it in parallel with reading this tutorial.
+The <a href="https://web.stanford.edu/~jurafsky/slp3/13.pdf" target="_blank" rel="noopener noreferrer">Machine Translation</a> chapter from <a href="https://web.stanford.edu/~jurafsky/slp3/" target="_blank" rel="noopener noreferrer">Speech and Language Processing</a> book by
+Dan Jurafsky and James H. Martin should be sufficient as a prerequisite.</p>
+
+<h1 id="installation">Installation</h1>
+<p>First, we must install two main elements (optionally 3).</p>
+<ol>
+  <li>Fairseq <img class="emoji" title=":wink:" alt=":wink:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f609.png" height="20" width="20">
+</li>
+  <li>SentencePiece - token segmentation</li>
+  <li>Wandb - metrics visualisation (optional, but highly recommended)</li>
+</ol>
+
+<h2 id="fairseq">Fairseq</h2>
+<p>There are two main approaches</p>
+<ul>
+  <li>using Fairseq as a black-box tool (<code class="language-plaintext highlighter-rouge">0.12.2</code> is a specific version for the reproducibility of this tutorial):
+    <div class="language-bash highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>pip <span class="nb">install </span><span class="nv">fairseq</span><span class="o">==</span>0.12.2
+</code></pre></div>    </div>
+  </li>
+  <li>writing own models/making changes in the core library:
+    <div class="language-bash highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>git clone https://github.com/facebookresearch/fairseq.git
+<span class="nb">cd </span>fairseq
+git checkout v0.12.2
+pip <span class="nb">install</span> <span class="nt">-e</span> <span class="nb">.</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p>Both require a pre-installed correct <a href="https://pytorch.org/get-started/locally/" target="_blank" rel="noopener noreferrer">PyTorch</a> version
+(Colab has it done for you by default).</p>
+
+<h2 id="sentencepiece">SentencePiece</h2>
+<p>Fairseq has multiple internal/external possibilities for token segmentation (see <code class="language-plaintext highlighter-rouge">@register_bpe</code> annotation in the source code).
+To list a few:</p>
+<ul>
+  <li>subword_nmt</li>
+  <li>fastbpe</li>
+  <li>sentencepiece</li>
+</ul>
+
+<p>My go-to approach is the <a href="https://github.com/google/sentencepiece" target="_blank" rel="noopener noreferrer">SentencePiece</a> library.
+I prefer to use it as a cmd tool; however, it has Python bindings that can be installed via <code class="language-plaintext highlighter-rouge">pip</code>.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/google/sentencepiece.git 
+<span class="nb">cd </span>sentencepiece
+git checkout v0.1.97
+<span class="nb">mkdir </span>build
+<span class="nb">cd </span>build
+cmake ..
+make <span class="nt">-j</span> <span class="si">$(</span><span class="nb">nproc</span><span class="si">)</span>
+</code></pre></div></div>
+
+<p>The executables are stored in the <code class="language-plaintext highlighter-rouge">build/src</code> directory.
+I usually keep the path to this directory in an external environment variable, i.e. <code class="language-plaintext highlighter-rouge">SPM</code>.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">SPM</span><span class="o">=</span><span class="nv">$PWD</span>/sentencepiece/build/src
+</code></pre></div></div>
+
+<p>We can test our installation by running the following command:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$SPM</span>/spm_train <span class="nt">--help</span>
+</code></pre></div></div>
+
+<h2 id="wandb">Wandb</h2>
+<p>We need to do a simple <a href="https://docs.wandb.ai/quickstart#set-up-wb" target="_blank" rel="noopener noreferrer">setup</a> to allow Fairseq to push the metrics into <a href="https://wandb.ai/" target="_blank" rel="noopener noreferrer">Wandb</a>.
+For now, this is all; the rest will be done during the execution of the training.</p>
+
+<h1 id="from-data-to-model">From data to model</h1>
+<p>Once again, we need a few steps to reach our goal of training your first Fairseq model. The required steps are:</p>
+<ol>
+  <li>Getting parallel corpora</li>
+  <li>Training a SentencePiece model</li>
+  <li>Pre-processing the dataset</li>
+  <li>Training a model (at last!)</li>
+</ol>
+
+<h2 id="parallel-corpora">Parallel corpora</h2>
+<p>The most common parallel corpora repository is <a href="https://opus.nlpl.eu/" target="_blank" rel="noopener noreferrer">OPUS</a>.
+Additionally, more data and neat validation/test datasets can be found on the WMT competitions website (e.g. <a href="https://www.statmt.org/wmt22/translation-task.html" target="_blank" rel="noopener noreferrer">WMT22</a>, <a href="https://www.statmt.org/wmt21/translation-task.html" target="_blank" rel="noopener noreferrer">WMT21</a>).</p>
+
+<p>It is important to note that some parallel corpora might require additional filtering (e.g. ratio-based, length-based).</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget <span class="nt">-O</span> de-en.txt.zip https://opus.nlpl.eu/download.php?f<span class="o">=</span>News-Commentary/v16/moses/de-en.txt.zip
+unzip de-en.txt.zip
+</code></pre></div></div>
+<p>The archive contains at least two files, one with German sentences and one with English ones.
+The format is straightforward - sentence per line (note: automatic sentence segmentation might be mistaken; therefore, the mentioned filtering).</p>
+
+<p>First three lines of the <code class="language-plaintext highlighter-rouge">News-Commentary.de-en.en</code> file.</p>
+<blockquote>
+$10,000 Gold?<br>
+SAN FRANCISCO – It has never been easy to have a rational conversation about the value of gold.<br>
+Lately, with gold prices up more than 300% over the last decade, it is harder than ever.
+</blockquote>
+<p>The<code class="language-plaintext highlighter-rouge">News-Commentary.de-en.de</code> has corresponding sentences in German.</p>
+
+<h2 id="training-a-sentencepiece-model">Training a SentencePiece model</h2>
+<p>We will use the <code class="language-plaintext highlighter-rouge">spm_train</code> command to train a SentencePiece model.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$SPM</span>/spm_train <span class="nt">--input</span><span class="o">=</span><span class="s2">"News-Commentary.de-en.en,News-Commentary.de-en.de"</span> <span class="se">\</span>
+    <span class="nt">--vocab_size</span><span class="o">=</span>16000 <span class="se">\</span>
+    <span class="nt">--character_coverage</span><span class="o">=</span>1 <span class="se">\</span>
+    <span class="nt">--num_threads</span><span class="o">=</span>8 <span class="se">\</span>
+    <span class="nt">--max_sentence_length</span><span class="o">=</span>256 <span class="se">\</span>
+    <span class="nt">--model_prefix</span><span class="o">=</span><span class="s2">"spm"</span> <span class="se">\</span>
+    <span class="nt">--model_type</span><span class="o">=</span>unigram <span class="se">\</span>
+    <span class="nt">--bos_id</span><span class="o">=</span>0 <span class="nt">--pad_id</span><span class="o">=</span>1 <span class="nt">--eos_id</span><span class="o">=</span>2 <span class="nt">--unk_id</span><span class="o">=</span>3
+</code></pre></div></div>
+
+<p>Few words of explanation for the options used in the command.
+The vocabulary size (<code class="language-plaintext highlighter-rouge">--vocab_size</code>) defines the size of the output vocabulary.
+Character coverage (<code class="language-plaintext highlighter-rouge">--character_coverage</code>) specifies the percentage (in the range of 0-1) of the characters that are present in the final vocabulary.
+For alphabets with many symbols, one might consider lowering the value.
+Maximum sentence length (<code class="language-plaintext highlighter-rouge">--max_sentence_length</code>) skips sentences longer than provided value, while model type (<code class="language-plaintext highlighter-rouge">--model_type</code>) specifies the training algorithm.
+Token indices (<code class="language-plaintext highlighter-rouge">--bos_id</code>, <code class="language-plaintext highlighter-rouge">--pad_id</code>, <code class="language-plaintext highlighter-rouge">--eos_id</code>, <code class="language-plaintext highlighter-rouge">--unk_id</code>) are set to match Fairseq settings.</p>
+
+<p>See other options with documentation by running:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$SPM</span>/spm_train <span class="nt">--help</span>
+</code></pre></div></div>
+
+<p><strong>Important</strong> We need to pre-process the outcome dictionary from the SentencePiece to match the required Fairseq format.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cut</span> <span class="nt">-f1</span> spm.vocab | <span class="nb">tail</span> <span class="nt">-n</span> +5 | <span class="nb">sed</span> <span class="s2">"s/</span><span class="nv">$/</span><span class="s2"> 100/g"</span> <span class="o">&gt;</span> dict.txt
+</code></pre></div></div>
+<p>This command removes unnecessary lines and replaces values with a constant.</p>
+
+<p><em>Before</em> <code class="language-plaintext highlighter-rouge">spm.vocab</code> first lines:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;s&gt;	0
+&lt;pad&gt;	0
+&lt;/s&gt;	0
+&lt;unk&gt;	0
+,	-3.12151
+.	-3.35171
+s	-3.7291
+</code></pre></div></div>
+
+<p><em>After</em> <code class="language-plaintext highlighter-rouge">dict.txt</code> first lines:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>, 100
+. 100
+s 100
+</code></pre></div></div>
+<p>The <code class="language-plaintext highlighter-rouge">dict.txt</code> file will be the one that we later pass to Fairseq commands as an argument.</p>
+
+<h2 id="data-pre-processing">Data pre-processing</h2>
+
+<p>Here, we have two tasks to do:</p>
+
+<ul>
+  <li>Using the SentencePiece model to pre-process our data.</li>
+  <li>(Partially optional) Binarise the data to the Fairseq format.</li>
+</ul>
+
+<h3 id="sentencepiece-encoding">SentencePiece encoding</h3>
+<p>The first step should be done for all the datasets, including validation and test ones.
+The operation will segment the words into subwords, adding the special symbol <code class="language-plaintext highlighter-rouge">▁</code> to the first subword of a word and a space between subwords.</p>
+
+<p>The command is <code class="language-plaintext highlighter-rouge">spm_encode</code> with arguments as follows:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$SPM</span>/spm_encode <span class="nt">--model</span><span class="o">=</span><span class="s2">"spm.model"</span> <span class="nt">--output_format</span><span class="o">=</span>piece &lt; <span class="s2">"News-Commentary.de-en.en"</span> <span class="o">&gt;</span> train.en-de.spm.en
+<span class="nv">$SPM</span>/spm_encode <span class="nt">--model</span><span class="o">=</span><span class="s2">"spm.model"</span> <span class="nt">--output_format</span><span class="o">=</span>piece &lt; <span class="s2">"News-Commentary.de-en.de"</span> <span class="o">&gt;</span> train.en-de.spm.de
+</code></pre></div></div>
+
+<p>The results compared to the input:</p>
+<blockquote>
+$10,000 Gold?<br>
+▁$1 0,000 ▁Gold ?
+</blockquote>
+
+<p>The algorithm split the <code class="language-plaintext highlighter-rouge">$10,000</code> into two subwords: <code class="language-plaintext highlighter-rouge">$1</code> and <code class="language-plaintext highlighter-rouge">0,000</code>. The first subword is marked with the special symbol <code class="language-plaintext highlighter-rouge">▁</code>.
+The token <code class="language-plaintext highlighter-rouge">Gold</code> was not split as the SentencePiece algorithm had enough depth (<code class="language-plaintext highlighter-rouge">16000</code>) to include the word in the dictionary.
+However, it was separated from the question mark sign.</p>
+
+<p>All four subwords are separated by space.</p>
+
+<h3 id="binarisation">Binarisation</h3>
+<p>Here, we map the data into the Fairseq format.</p>
+
+<p>First, the default approach, with binarisation.
+Note that we provide <strong>external</strong> (unused during SentencePiece training) validation dataset encoded with the trained model.
+We also provide created earlier <code class="language-plaintext highlighter-rouge">dict.txt</code>, assume the <code class="language-plaintext highlighter-rouge">en-&gt;de</code> translation direction and define the BPE algorithm (<code class="language-plaintext highlighter-rouge">sentencepiece</code>).
+The joined dictionary option (<code class="language-plaintext highlighter-rouge">--joined-dictionary</code>) means we trained just one SentencePiece model for both languages.
+It is possible to provide separate models for source and target languages.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fairseq-preprocess <span class="se">\</span>
+    <span class="nt">--trainpref</span> <span class="s2">"train.en-de.spm"</span> <span class="se">\</span>
+    <span class="nt">--validpref</span> <span class="s2">"valid.en-de.spm"</span> <span class="se">\</span>
+    <span class="nt">--destdir</span> <span class="s2">"bin"</span> <span class="se">\</span>
+    <span class="nt">--joined-dictionary</span> <span class="se">\</span>
+    <span class="nt">--srcdict</span> <span class="s2">"dict.txt"</span><span class="se">\</span>
+    <span class="nt">--source-lang</span> <span class="s2">"en"</span> <span class="se">\</span>
+    <span class="nt">--target-lang</span> <span class="s2">"de"</span> <span class="se">\</span>
+    <span class="nt">--bpe</span> sentencepiece <span class="se">\</span>
+    <span class="nt">--workers</span> 8
+</code></pre></div></div>
+
+<p>Checking the output files, we can see <code class="language-plaintext highlighter-rouge">*.bin</code> and <code class="language-plaintext highlighter-rouge">*.idx</code> files in <code class="language-plaintext highlighter-rouge">bin</code> directory in unreadable, binary format.
+However, having the data in readable format might be nice, primarily for debugging.
+To achieve that, use the <code class="language-plaintext highlighter-rouge">--dataset-impl "raw"</code>.
+By default, this flag has the value <code class="language-plaintext highlighter-rouge">mmap</code>.</p>
+
+<h2 id="training-a-nmt-model">Training a NMT model</h2>
+<p>The longest part - make sure to have GPU enabled. The provided hyperparameters may be fine, but only may. You might want to enable half precision (<code class="language-plaintext highlighter-rouge">--fp16</code>) or define/use a smaller model to speed up the training.</p>
+
+<p>In the case of Colab timing out, you can change the <code class="language-plaintext highlighter-rouge">--keep-interval-updates</code> and <code class="language-plaintext highlighter-rouge">--no-epoch-checkpoints</code> flags to save intermediate checkpoints and resume the training from the last checkpoint.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fairseq-train <span class="se">\</span>
+        <span class="s2">"bin"</span> <span class="se">\</span>
+        <span class="nt">--fp16</span> <span class="se">\</span>
+        <span class="nt">--arch</span> transformer_wmt_en_de <span class="se">\</span>
+        <span class="nt">--share-all-embeddings</span> <span class="se">\</span>
+        <span class="nt">--optimizer</span> adam <span class="se">\</span>
+        <span class="nt">--adam-betas</span> <span class="s1">'(0.9, 0.98)'</span> <span class="se">\</span>
+        <span class="nt">--clip-norm</span> 0.0 <span class="se">\</span>
+        <span class="nt">--lr</span> 5e-4 <span class="se">\</span>
+        <span class="nt">--lr-scheduler</span> inverse_sqrt <span class="se">\</span>
+        <span class="nt">--warmup-updates</span> 4000 <span class="se">\</span>
+        <span class="nt">--warmup-init-lr</span> 1e-07 <span class="se">\</span>
+        <span class="nt">--dropout</span> 0.1 <span class="se">\</span>
+        <span class="nt">--weight-decay</span> 0.0 <span class="se">\</span>
+        <span class="nt">--criterion</span> label_smoothed_cross_entropy <span class="se">\</span>
+        <span class="nt">--label-smoothing</span> 0.1 <span class="se">\</span>
+        <span class="nt">--save-dir</span> <span class="s2">"model_output"</span> <span class="se">\</span>
+        <span class="nt">--log-format</span> json <span class="se">\</span>
+        <span class="nt">--log-interval</span> 100 <span class="se">\</span>
+        <span class="nt">--max-tokens</span> 8000 <span class="se">\</span>
+        <span class="nt">--max-epoch</span> 100 <span class="se">\</span>
+        <span class="nt">--patience</span> 5 <span class="se">\</span>
+        <span class="nt">--seed</span> 3921 <span class="se">\</span>
+        <span class="nt">--eval-bleu</span> <span class="se">\</span>
+        <span class="nt">--eval-bleu-args</span> <span class="s1">'{"beam": 5, "max_len_a": 1.2, "max_len_b": 10}'</span> <span class="se">\</span>
+        <span class="nt">--eval-bleu-detok</span> space <span class="se">\</span>
+        <span class="nt">--eval-bleu-remove-bpe</span> sentencepiece <span class="se">\</span>
+        <span class="nt">--eval-bleu-print-samples</span> <span class="se">\</span>
+        <span class="nt">--best-checkpoint-metric</span> bleu <span class="se">\</span>
+        <span class="nt">--maximize-best-checkpoint-metric</span>
+</code></pre></div></div>
+
+<p>After a dozen minutes (or a few hours - depending on the data/GPU/model), we have our model in the <code class="language-plaintext highlighter-rouge">model_output</code> directory <img class="emoji" title=":tada:" alt=":tada:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f389.png" height="20" width="20"></p>
+
+<h3 id="wandb-notes">Wandb notes:</h3>
+<p>Set <code class="language-plaintext highlighter-rouge">--wandb-project</code> to specify the Wandb project.</p>
+
+<p>You can customise Wandb tags and the run name by setting env variables (<code class="language-plaintext highlighter-rouge">WANDB_TAGS</code> and <code class="language-plaintext highlighter-rouge">WANDB_NAME</code>)</p>
+
+      </d-article>
+
+      <d-appendix>
+        <d-footnote-list></d-footnote-list>
+        <d-citation-list></d-citation-list>
+      </d-appendix>
+
+    </div>
+
+    <!-- Footer -->
+
+    
+<footer class="fixed-bottom">
+  <div class="container mt-0">
+    © Copyright 2025 Mateusz  Klimaszewski.
+    Powered by <a href="http://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" target="_blank" rel="noopener noreferrer">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>.
+
+    
+    
+  </div>
+</footer>
+
+
+
+  </body>
+
+  <d-bibliography src="/assets/bibliography/">
+  </d-bibliography>
+
+</html>
