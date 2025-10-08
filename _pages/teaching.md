@@ -23,7 +23,7 @@ nav: true
             <ul>
                 <li>Termin elastyczny, jeśli zdalnie.</li>
             </ul>
-            <li>Pytania (element **obwiązkowy** każdego projektu) - Teams/mail/konsultacje</li>
+            <li>Pytania (element <b>obwiązkowy</b> każdego projektu) - Teams/mail/konsultacje</li>
         </ul>
     <h2 class="info">Propozycje projektów</h2>
     Własne propozycje tematów mile widziane
