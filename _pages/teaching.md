@@ -24,7 +24,7 @@ nav: true
             <ul>
                 <li>Termin elastyczny, jeśli zdalnie.</li>
             </ul>
-            <li>Pytania (element <b>obwiązkowy</b> każdego projektu) - Teams/mail/konsultacje</li>
+            <li>Pytania (element <b>obowiązkowy</b> każdego projektu) - Teams/mail/konsultacje</li>
         </ul>
     <h2 class="info">Propozycje projektów</h2>
     Własne propozycje tematów mile widziane
@@ -51,7 +51,7 @@ nav: true
             <ul>
                 <li>Termin elastyczny, jeśli zdalnie.</li>
             </ul>
-            <li>Pytania (element obwiązkowy każdego projektu) - Teams/mail/konsultacje</li>
+            <li>Pytania (element obowiązkowy każdego projektu) - Teams/mail/konsultacje</li>
         </ul>
     <h2 class="info">Zasady (in-progress)</h2>
         <ul>
@@ -82,7 +82,7 @@ nav: true
             <ul>
                 <li>Termin elastyczny, jeśli zdalnie.</li>
             </ul>
-            <li>Pytania (element obwiązkowy każdego projektu) - Teams/mail/konsultacje</li>
+            <li>Pytania (element obowiązkowy każdego projektu) - Teams/mail/konsultacje</li>
         </ul>
     <h2 class="info">Propozycje projektów</h2>
     Własne propozycje tematów mile widziane
@@ -130,7 +130,7 @@ nav: true
             <ul>
                 <li>Termin elastyczny, jeśli zdalnie.</li>
             </ul>
-            <li>Pytania (element obwiązkowy każdego projektu) - Teams/mail/konsultacje</li>
+            <li>Pytania (element obowiązkowy każdego projektu) - Teams/mail/konsultacje</li>
         </ul>
     <h2 class="info">Propozycje projektów</h2>
     Własne propozycje tematów mile widziane. Do projektów związanych z tłumaczeniem maszynowym, dostępny jest tutorial w zakładce <a href="/blog/2023/fariseq-101-train-a-model/">blog</a>
