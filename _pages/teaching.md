@@ -12,9 +12,10 @@ nav: true
     <h3 class="subtitle">Wprowadzenie do przetwarzania języka naturalnego</h3>
         <h2 class="info">Harmonogram</h2>
         <ul>
-            <li>do TBD - ustalenie tematu projektu</li>
-            <li>do TBD - dokumentacja wstępna (element obowiązkowy dokumentacji to <b>wstępne wyniki</b>)</li>
-            <li>do TBD - oddanie projektu</li>
+            <li>do 30.10.25 - ustalenie tematu projektu</li>
+            <li>do 14.11.25 - dokumentacja wstępna</li>
+            <li>do 4.12.25 - dokumentacja wstępna rozszerzona o <b>wstępne wyniki</b></li>
+            <li>do 3.01.26 - oddanie projektu</li>
         </ul>
     <h2 class="info">Informacje organizacyjne</h2>
         <ul>
@@ -29,10 +30,12 @@ nav: true
     Własne propozycje tematów mile widziane
         <br><br>
         <ol>
+        <li>Tłumczenie kontekstowe - problemy
         <ul>
             <li>Ewaluacja tłumaczenia kontekstowego (dokumenty zamiast zdań)</li>
             <li>Zadanie eksploracyjne - szukanie ograniczeń obecnych modeli i metryk</li>
         </ul>
+        </li>
         <li><a href="https://huggingface.co/docs/peft/developer_guides/model_merging">Model merging</a>
         <ul>
             <li>Wytrenowanie kilku modeli (np. <a href="prajjwal1/bert-mini">MiniBERT</a>) do wybranych zadań NLP</li>
