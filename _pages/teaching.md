@@ -42,6 +42,14 @@ nav: true
             <li>Porównanie kilku metod "model merging" (<a href="https://github.com/arcee-ai/mergekit?tab=readme-ov-file#merge-methods">przykładowa lista i implementacja</a>)</li>
         </ul>
         </li>
+        <li>Porównanie metod Parameter-Efficient Fine-tuning (PEFT) na wybranych zadaniach NLP
+        <ul>
+            <li>Wybór różnych zadań NLP (w różnym typie, np. klasyfikacja i <a href="https://huggingface.co/docs/autotrain/en/seq2seq">seq2seq</a>)</li>
+            <li>Porównanie kilku metod PEFT w tych zadaniach (np. korzystając z bilioteki <a href="https://github.com/huggingface/peft">peft</a> lub <a href="https://github.com/adapter-hub/adapters">adapters</a>)</li>
+        </ul>
+        </li>
+        <li>Shared Task w ramach jednej z konferencji, np. <a href="https://fever.ai/task.html">FEVER</a></li>
+        <li>TBA</li>
         </ol>
     <h1 class="title">Application Programming [PAP]</h1>
     <h3 class="subtitle">Programowanie aplikacyjne</h3>
