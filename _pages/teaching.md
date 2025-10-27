@@ -48,6 +48,13 @@ nav: true
             <li>Porównanie kilku metod PEFT w tych zadaniach (np. korzystając z bilioteki <a href="https://github.com/huggingface/peft">peft</a> lub <a href="https://github.com/adapter-hub/adapters">adapters</a>)</li>
         </ul>
         </li>
+        <li>Adaptacja domeny poprzez "pre-training"
+        <ul>
+            <li>Przeprowadzenie (na mała skalę) eksperymentu zbliżonego do <a href="https://aclanthology.org/2020.acl-main.740.pdf">Gururangan et al., ACL 2020</a></li>
+            <li>Wybór jednego z zadań NLP + kilku zbiorów podobnych na których będzie wykonywany tylko wstępny trening</li>
+            <li>Porównanie wyników zadania z i bez zastosowania tej metody</li>
+        </ul>
+        </li>
         <li>Shared Task w ramach jednej z konferencji, np. <a href="https://fever.ai/task.html">FEVER</a></li>
         <li>TBA</li>
         </ol>
