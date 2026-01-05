@@ -15,7 +15,7 @@ nav: true
             <li>do 30.10.25 - ustalenie tematu projektu</li>
             <li>do 14.11.25 - dokumentacja wstępna</li>
             <li><span style="text-decoration: line-through;">do 4.12.25</span> do 11.12.25 - dokumentacja wstępna rozszerzona o <b>wstępne wyniki</b></li>
-            <li>do 3.01.26 - oddanie projektu</li>
+            <li>do 13.01.26 - oddanie projektu</li>
         </ul>
     <h2 class="info">Informacje organizacyjne</h2>
         <ul>
